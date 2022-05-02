@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>テトリス</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+        <style>
+            #root {
+                font-size: 0;
+            }
+            #hold-mino {
+                vertical-align: top;
+                display: inline-block;
+            }
+            #field {
+                display: inline-block;
+            }
+            .cell {
+                display: inline-block;
+                background-color: #eee;
+                /* background-color: rgb(255, 255, 255); */
+                width: 25px;
+                height: 25px;
+                margin: 1px;
+            }
+            .filled {
+                background-color: black;
+            }
+            .mino {
+                background-color: purple;
+            }
+            .S {
+                background-color: lime;
+            }
+            .O {
+                background-color: lightpink;
+            }
+            .I {
+                background-color: lightgreen;
+            }
+            .Z {
+                background-color: lightcoral;
+            }
+            .L {
+                background-color: lightsalmon;
+            }
+            .T {
+                background-color: limegreen;
+            }
+            .N {
+                background-color: aqua;
+            }
+            .F {
+                background-color: darkcyan;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root">
+            <div id="hold-mino"></div>
+            <div id="field"></div>
+        </div>
+        <h2>←↓→ or a,s,dで移動</h2>
+        <h2>↑, w , スペースキーで回転</h2>
+        <h2>hか数字の0でホールド</h2>
+        <script src="index.js"></script>
+    </body>
+</html>
